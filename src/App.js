@@ -1,10 +1,10 @@
 import React from 'react'
-import MainPage from './Pages/Game/index.js'
+import Routing from './Routes/routers.js'
 
 const App = () => {
   return(
     <div>
-      <MainPage />
+      <Routing />
     </div>
   )
 }

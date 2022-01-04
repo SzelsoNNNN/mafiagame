@@ -24,7 +24,7 @@ class Header extends Component {
         /* let gameTimePicSrc = './../../resources/images/dayTime.png'
         let gameTimeAlt = "Dzień" */
         
-        let gameTimePicSrc = gameTimeNight 
+        let gameTimePicSrc = gameTimeDay 
         let gameTimeAlt = "Dzień"
         
         if(gameTimeAlt === 'Dzień') {
