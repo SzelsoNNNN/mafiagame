@@ -1,0 +1,281 @@
+.config_container {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div {
+  height: 100vh;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 10px 50px;
+}
+
+.config_container > div > div > div.config_tile_name {
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.config_container > div > div.config_tile {
+  margin-bottom: 10px;
+  height: 66.66667%;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card {
+  padding: 20px 0;
+  width: 100%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card > div.card_tile {
+  padding: 0px 20px;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card > div.card_tile:last-child {
+  border: none;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card > div.card_tile > button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ff3333;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card > div.card_tile > div.card_name {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card > div.card_tile > div.card_gamemaster {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div.config_tile > div.config_tile_card > div.card_tile > div.card_gamemaster input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: white;
+  border: 1px solid gray;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.config_container > div > div.config_tile_addPlayer {
+  height: 33.33333%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div.config_tile_addPlayer > div.config_addPlayers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div.config_tile_addPlayer > div.config_addPlayers input {
+  width: 18%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: white;
+  border: 1px solid gray;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.config_container > div > div.config_tile_addPlayer > div.config_tile_buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div.config_tile_addPlayer > div.config_tile_buttons button {
+  width: 30%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #3333ff;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.config_container > div > div.config_tile_addPlayer > div.config_tile_buttons button.button_reset {
+  background: #ff3333;
+}
+
+.config_container > div > div.config_tile_game {
+  height: 100%;
+}
+
+.config_container > div > div.config_tile_game > div.tile_game_tiles {
+  width: 100%;
+  height: 92.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-y: scroll;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.config_container > div > div.config_tile_game > div.tile_game_tiles > div.mini_game_tile {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.config_container .config_left_side {
+  width: 66.66667%;
+}
+
+.config_container .config_right_side {
+  width: 33.33333%;
+}
