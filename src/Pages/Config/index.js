@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './config_page.css'
 
 class Config extends Component {
     constructor(props) {
         super(props)
     }
+
+    // Ma wysyłać do propów zebrane dane
     players = 5
     render() {
         return(
@@ -61,7 +64,11 @@ class Config extends Component {
                             <input placeholder="Nazwa gracza" />
                         </div>
                         <div className="config_tile_buttons">
-                            <button className="button_play">Zacznij grę</button>
+                            <button className="button_play">
+                                <Link to="/game">
+                                    Zacznij grę
+                                </Link>
+                            </button>
                             <button className="button_reset">Zresetuj pola</button>
                         </div>
                     </div>

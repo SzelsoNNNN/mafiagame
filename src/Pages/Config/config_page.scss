@@ -104,6 +104,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                overflow-y: scroll;
                 >div.config_addPlayers {
                     width: 100%;
                     display: flex;
@@ -147,6 +148,7 @@
             }
             &.config_tile_game {
                 height: 100%;
+                overflow-y: scroll;
                 >div.tile_game_tiles {
                     width: 100%;
                     height: 92.5%;
@@ -173,4 +175,8 @@
     .config_right_side {
         width: (100% / 3);
     }
+}
+a {
+    color: white;
+    text-decoration: none;
 }

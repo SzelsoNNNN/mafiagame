@@ -175,6 +175,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: scroll;
 }
 
 .config_container > div > div.config_tile_addPlayer > div.config_addPlayers {
@@ -242,6 +243,7 @@
 
 .config_container > div > div.config_tile_game {
   height: 100%;
+  overflow-y: scroll;
 }
 
 .config_container > div > div.config_tile_game > div.tile_game_tiles {
@@ -279,3 +281,9 @@
 .config_container .config_right_side {
   width: 33.33333%;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=config_page.css.map */

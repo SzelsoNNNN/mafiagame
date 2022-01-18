@@ -6,6 +6,9 @@ import playerImg from './../../resources/images/gamemaster/profile_picture.png'
 import logoImg from './../../resources/images/logo/Logo_Mafia.svg.png'
 
 import Header from './../../Components/Header/index.js'
+import ChangePlayTime from './ButtonsActions/ChangePlayTime.js'
+import ReturnPlayer from './ButtonsActions/ReturnPlayer.js'
+import ReturnMove from './ButtonsActions/ReturnMove.js'
 
 class Game extends Component {
     render() {
@@ -17,32 +20,32 @@ class Game extends Component {
                         <div className="main_tile">
                             <div className="main_tile_name">
                                 lista graczy
-                                <div className="main_tile_players">
-                                    <div className="player_tile">
-                                        <div className="player_info">
-                                            <div className="player_img">
-                                                <img src={playerImg} />
-                                            </div>
-                                            <div className="player_name">
-                                                [player.name] | [player.role]
-                                            </div>
+                            </div>
+                            <div className="main_tile_players">
+                                <div className="player_tile">
+                                    <div className="player_info">
+                                        <div className="player_img">
+                                            <img src={playerImg} />
                                         </div>
-                                        <div className="player_action">
-                                            Kick
+                                        <div className="player_name">
+                                            [player.name]
                                         </div>
                                     </div>
-                                    <div className="player_tile">
-                                        <div className="player_info">
-                                            <div className="player_img">
-                                                <img src={playerImg} />
-                                            </div>
-                                            <div className="player_name">
-                                                [player.name] | [player.role]
-                                            </div>
+                                    <div className="player_action">
+                                        Kick
+                                    </div>
+                                </div>
+                                <div className="player_tile">
+                                    <div className="player_info">
+                                        <div className="player_img">
+                                            <img src={playerImg} />
                                         </div>
-                                        <div className="player_action">
-                                            Kick
+                                        <div className="player_name">
+                                            [player.name]
                                         </div>
+                                    </div>
+                                    <div className="player_action">
+                                        Kick
                                     </div>
                                 </div>
                             </div>
@@ -84,9 +87,9 @@ class Game extends Component {
                                 zarządzanie zdarzeniami
                             </div>
                             <div className="actions_tiles">
-                                <div className="action_file">
-                                    
-                                </div>
+                                <ChangePlayTime />
+                                <ReturnPlayer />
+                                <ReturnMove />
                             </div>
                         </div>
                     </div>
