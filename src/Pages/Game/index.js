@@ -26,6 +26,7 @@ class Game extends Component {
                                     <div className="player_info">
                                         <div className="player_img">
                                             <img src={playerImg} />
+
                                         </div>
                                         <div className="player_name">
                                             [player.name]
@@ -65,6 +66,7 @@ class Game extends Component {
                                     <div className="player_info">
                                         <div className="player_img">
                                             <img src={playerImg} />
+
                                         </div>
                                         <div className="player_name">
                                             [player.name]
@@ -73,6 +75,20 @@ class Game extends Component {
                                     <div className="player_action">
                                         Kick
                                     </div>
+                                </div>
+                                <div className="player_tile">
+                                    <div className="player_info">
+                                        <div className="player_img">
+                                            <img src={playerImg} />
+                                        </div>
+                                        <div className="player_name">
+                                            [player.name]
+                                        </div>
+                                    </div>
+                                    <div className="player_action">
+                                        Kick
+                                    </div>
+
                                 </div>
                                 <div className="player_tile">
                                     <div className="player_info">
@@ -99,19 +115,7 @@ class Game extends Component {
                                     <div className="player_action">
                                         Kick
                                     </div>
-                                </div>
-                                <div className="player_tile">
-                                    <div className="player_info">
-                                        <div className="player_img">
-                                            <img src={playerImg} />
-                                        </div>
-                                        <div className="player_name">
-                                            [player.name]
-                                        </div>
-                                    </div>
-                                    <div className="player_action">
-                                        Kick
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

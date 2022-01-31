@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+
 import ChangePlayerNumbers from './ChangePlayerNumbers/ChangePlayerNumbers.js'
+
 import './config_page.css'
 
 class Config extends Component {
@@ -10,6 +12,11 @@ class Config extends Component {
             playerNumber: 0
         }
     }
+
+
+    // Ma wysyłać do propów zebrane dane
+    players = 5
+
     render() {
         return(
             <div className="config_container">
