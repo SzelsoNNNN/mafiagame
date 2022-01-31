@@ -20,3 +20,344 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+div.game {
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container {
+  width: 99%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div {
+  height: 80vh;
+  margin-top: 20px;
+}
+
+div.game > div.main_container > div.left_side_main {
+  width: 19.8%;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile {
+  width: 90%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_name {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  margin: 10px 0;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_players {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_players > .player_tile {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_players > .player_tile > .player_info {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_players > .player_tile > .player_info > .player_name {
+  font-size: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  text-align: left;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_players > .player_tile > .player_info > .player_img {
+  height: 100%;
+  width: 100%;
+}
+
+div.game > div.main_container > div.left_side_main > .main_tile > .main_tile_players > .player_tile > .player_info > .player_img > img {
+  height: 55px;
+  width: auto;
+  border-radius: 100%;
+}
+
+div.game > div.main_container > div.center_side_main {
+  width: 59.4%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div.center_side_main > .main_logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+}
+
+div.game > div.main_container > div.center_side_main > .main_logo > img {
+  height: 90%;
+  width: 70%;
+}
+
+div.game > div.main_container > div.center_side_main > .main_history {
+  width: 100%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60%;
+}
+
+div.game > div.main_container > div.center_side_main > .main_history > .history_tile_name {
+  width: 95%;
+  margin: 10px;
+  padding-bottom: 9px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+div.game > div.main_container > div.center_side_main > .main_history > .history_tiles {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+div.game > div.main_container > div.center_side_main > .main_history > .history_tiles .history_tile {
+  background: white;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+div.game > div.main_container > div.right_side_main {
+  width: 19.8%;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div.right_side_main > .main_tile {
+  width: 90%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+div.game > div.main_container > div.right_side_main > .main_tile > .main_tile_name {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  margin: 10px 0;
+}
+
+div.game > div.main_container > div.right_side_main > .main_tile > .actions_tiles {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.game > div.main_container > div.right_side_main > .main_tile > .actions_tiles button.action_tile {
+  width: 100%;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background: #ff3333;
+  border: 1px solid #cc0000;
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}

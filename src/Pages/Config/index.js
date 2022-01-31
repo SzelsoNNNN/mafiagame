@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import ChangePlayerNumbers from './ChangePlayerNumbers/ChangePlayerNumbers.js'
 import './config_page.css'
 
 class Config extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            playerNumber: 0
+        }
     }
-    players = 5
     render() {
         return(
             <div className="config_container">
@@ -15,16 +19,8 @@ class Config extends Component {
                             konfiguracja gry
                         </div>
                         <div className="config_tile_card">
-                            <div className="card_tile">
-                                <div className="card_name">
-                                    ilość graczy
-                                </div>
-                                <button className="card_button">liczba</button>
-                                <button className="card_button">liczba</button>
-                                <button className="card_button">liczba</button>
-                                <button className="card_button">liczba</button>
-                                <button className="card_button">liczba</button>
-                            </div>
+                            
+                                <ChangePlayerNumbers />
 
                             <div className="card_tile">
                                 <div className="card_name">
@@ -51,7 +47,7 @@ class Config extends Component {
                     </div>
                     <div className="config_tile_addPlayer">
                         <div className="config_tile_name">
-                            dodawanie graczy
+                            Ilość graczy: {this.state.playerNumber}
                         </div>
                         <div className="config_addPlayers">
                             <input placeholder="Nazwa gracza" />
@@ -61,7 +57,11 @@ class Config extends Component {
                             <input placeholder="Nazwa gracza" />
                         </div>
                         <div className="config_tile_buttons">
-                            <button className="button_play">Zacznij grę</button>
+                            <button className="button_play">
+                                <Link to="/game">
+                                    Zacznij grę
+                                </Link>
+                            </button>
                             <button className="button_reset">Zresetuj pola</button>
                         </div>
                     </div>
